@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>WHAT TO WATCH</title>
+    <link rel="icon" type="image/png" href="logo.png" sizes="32x32">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* styl nagłówka */
+        header {
+            background-color: #262626;
+            height: 15vh;
+            display: flex;
+            align-items: center;
+        }
+
+        /* styl tytułu */
+        .page-title {
+            font-size: 10vh;
+            font-family: Bahnschrift;
+            flex: 1;
+            margin-right: 12.5vh;
+            text-align: center;
+            color: white;
+        }
+
+        /* styl logo w header */
+        .header img {
+            width: 10vh;
+            height: 10vh;
+            margin-left: 9.5vh;
+        }
+
+        /* sekcje z obrazami (początek) */
+        .section {
+            margin-left: 7vh;
+            margin-right: 7vh;
+            height: calc(100vh - 15vh - 7vh);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-items: flex-start;
+        }
+
+        /* styl sekcji z obrazkami */
+        .image-container {
+            width: 33.33%;
+            padding: 1vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            overflow-y: auto;
+            margin-bottom: 3vh;
+        }
+
+        /* styl zdjęc w sekcji z obrazami */
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            margin-bottom: 1vh;
+        }
+
+        /* styl dla sekcji ze streszczeniami */
+        .summary-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            overflow-y: auto;
+            margin-bottom: 7vh;
+            position: relative;
+            margin-top: 3vh;
+            font-family: Bahnschrift;
+            justify-content: space-between;
+        }
+
+        /* styl dla obrazów w sekcji ze streszczeniem */
+        .summary-container img {
+            max-width: 100%;
+            max-height: 100%;
+            align-self: flex-start;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+
+        /* styl dla sekcji z tytułem */
+        .summary-container .filmweb {
+            margin-bottom: 2vh;
+            margin-top: 2vh;
+        }
+
+        /* styl dla sekcji ze oceną */
+        .summary-container .title {
+            margin-bottom: 2vh;
+            margin-top: 2vh;
+        }
+
+        /* styl dla stopki */
+        footer {
+            background-color: #262626;
+            height: 7vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* styl dla sekcji z ikonami platform */
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* styl dla obrazów w sekcji z ikonami platform */
+        .icon-container img {
+            margin: 2vh;
+            max-width: 100px;
+            max-height: 100px;
+            border: 0.3vh solid grey;
+        }
+
+        /* cieniowanie zdjęć w sekcji z ikonami platform */
+        .icon-container img:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+            opacity: 0.6;
+        }
+
+        /* styl dla linków w stopce */
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 2vh;
+            margin: 0 1vw;
+        }
+
+        /* przycisk powrót do strony głównej */
+        #backhpButton {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 7vh;
+            height: 100vh;
+            background-color: #262626;
+            color: white;
+            font-size: 2vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            cursor: pointer;
+        }
+
+        /* przycisk powrót do poprzedniej strony */
+        #backButton {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 7vh;
+            height: 100vh;
+            background-color: #262626;
+            color: white;
+            font-size: 2vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header img">
+            <img src="logo.png" alt="logo">
+        </div>
+        <h1 class="page-title">WHAT TO WATCH</h1>
+    </header>
+
+    <div class="section">
+        <div class="image-container">
+            <img src="fhorror1.png" alt="Film 1">
+            <div class="summary-container">
+                <div class="title"><h3>OBECNOŚĆ</h3></div>
+                <p>Para badaczy staje do walki z najstraszniejszym demonem, z jakim kiedykolwiek miała do czynienia. "Obecność" opowiada prawdziwą historię Eda i Lorraine Warrenów, światowej sławy badaczy zjawisk paranormalnych, którzy zostali wezwani przez rodzinę terroryzowaną na odludnej farmie przez mroczną zjawę.</p>
+                    <div class="filmweb">
+                        <b>OCENA WEDŁUG FILMWEB: 7.4/10</b>
+                        <br><br><br><br>
+                        <h2>OBEJRZYSZ TUTAJ:</h2>
+                    </div>
+                <div class="icon-container">
+                    <a href="https://upflix.pl/r/X7y4AZ">
+                        <img src="lamazonprimevideo.png" width="100" height="100">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="fhorror2.png" alt="Film 2">
+            <div class="summary-container">
+                <div class="title"><h3>TO</h3></div>
+                <p>W miasteczku Derry siedmioro dzieci łączy siły przeciwko przerażającej nadnaturalnej istocie, która od wieków nawiedza prowincjonalną miejscowość. Tańczący klaun Pennywise, to potwór o nieopisanych mocach. Aby stawić czoło najgorszym koszmarom i przeżyć, dzieciaki będą musiały trzymać się razem.</p>
+                    <div class="filmweb">
+                        <b>OCENA WEDŁUG FILMWEB:6.7/10</b>
+                        <br><br><br><br>
+                        <h2>OBEJRZYSZ TUTAJ:</h2>
+                    </div>
+                <div class="icon-container">
+                    <a href="https://upflix.pl/r/vzodDw">
+                        <img src="lchili.png" width="100" height="100">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="fhorror3.png" alt="Film 3">
+            <div class="summary-container">
+                <div class="title"><h3>THE RING</h3></div>
+                <p>Wśród ludzi krąży kaseta wideo zawierająca obrazy jak z sennych koszmarów. Ich obejrzenie kończy się telefonem, zapowiadającym śmierć osoby oglądającej taśmę, dokładnie w ciągu siedmiu dni.</p>
+                <div class="filmweb">
+                    <b>OCENA WEDŁUG FILMWEB: 6.9/10</b>
+                    <br><br><br><br>
+                    <h2>OBEJRZYSZ TUTAJ:</h2>
+                </div>
+                <div class="icon-container">
+                    <a href="https://upflix.pl/r/Ieq1RZ">
+                        <img src="lskyshowtime.png" width="100" height="100">
+                    </a>
+                    <a href="https://upflix.pl/r/z1trC0">
+                        <img src="lamazonprimevideo.png" width="100" height="100">
+                    </a>
+                    <a href="https://upflix.pl/r/ZXjuBR">
+                        <img src="lchili.png" width="100" height="100">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://mail.google.com/">Kontakt</a>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://twitter.com/">Twitter</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+    </footer>
+
+    <button id="backhpButton">Powrót do strony głównej</button>
+    <script>
+        var backButton = document.getElementById("backhpButton");
+        backButton.addEventListener("click", function () {
+            window.location.href = "https://adrian2640.github.io/WTW/strona-glowna.html";
+        });
+    </script>
+
+    <button id="backButton">Powrót</button>
+    <script>
+        var backButton = document.getElementById("backButton");
+        backButton.addEventListener("click", function () {
+            window.history.back();
+        });
+    </script>
+</body>
+
+</html>
